@@ -805,11 +805,11 @@ SPIT_UP:
 	attackcanceler
 	attackstring
 	ppreduce
-	stockpiletobasedamage 0x82D9F94
 	accuracycheck SPITUP_FAIL 0x0
 	jumpiftypenotaffected SPITUP_FAIL
 	critcalc
 	damagecalc
+	stockpiletobasedamage 0x82D9F94
 	damageadjustment
 	attackanimation
 	waitanimation
