@@ -1563,6 +1563,13 @@ u8 check_if_cannot_attack(void)
                 battlescripts_curr_instruction = BS_POWDER;
             }
             break;
+        case 20: //psychic terrain
+            if (new_battlestruct->field_affecting.psychic_terrain && get_priority(current_move, bank_attacker) >= 1 && get_airborne_state(bank_target, 0, 1) <= 2)
+            {
+                effect = 4;
+                battlescripts_curr_instruction = BS_PSYCHICTERRAIN_PREVENTS;
+            }
+            break;
         }
         if (effect == 2)
         {

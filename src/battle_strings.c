@@ -226,6 +226,7 @@ o_, n_, Space, 0xFD, 0x0, Apos, s_, Space, s_, i_, d_, e_, Exclam, Termin};
 /*0x24C*/const u8 disguise_server_as_decoy_text[] = {I_, t_, s_, Space, d_, i_, s_, g_, u_, i_, s_, e_, Space, s_, e_, r_, v_, e_, d_, Space, i_, t_, Space, a_, s_, Space, a_, Space, d_, e_, c_, o_, y_, Exclam, Termin};
 /*0x24D*/const u8 misty_terrain_status_prevent_text[] = {T_, h_, e_, Space, M_, i_, s_, t_, y_, Space, T_, e_, r_, r_, a_, i_, n_, Space, p_, r_, o_, t_, e_, c_, t_, e_, d_, JumpLine, 0xFD, 16, Exclam, Termin};
 /*0x24E*/const u8 electric_terrain_status_prevent_text[] = {T_, h_, e_, Space, E_, l_, e_, c_, t_, r_, i_, c_, Space, T_, e_, r_, r_, a_, i_, n_, Space, p_, r_, o_, t_, e_, c_, t_, e_, d_, JumpLine, 0xFD, 16, Exclam, Termin};
+/*0x24F*/const u8 psychic_terrain_priority_prevent_text[] = {T_, h_, e_, Space, P_, s_, y_, c_, h_, i_, c_, Space, T_, e_, r_, r_, a_, i_, n_, Space, p_, r_, o_, t_, e_, c_, t_, e_, d_, JumpLine, 0xFD, 16, Space, f_, r_, o_, m_, Space, BuffCharac, 54, Exclam, 0xFF};
 
 const u8* const new_strings_table[] = {firespintrap_text, magmastormtrap_text, extreme_sun_activation_text, heavyrain_activation_text, mysticalaircurrent_activation_text, forewarn_text, slowstart_text, anticipation_text,
 infestationtrap_text, airlock_text, harvest_text, healer_text, empty_text5, moldbreaker_text, turboblaze_text, terravolt_text, empty_text9,
@@ -256,7 +257,7 @@ laserfocus_text, auroraveil_text, attacker_item_activates_text, atk_ability_text
 attackerhurt_text, attackerfellinlove_text, itemstatraise_text, targetnoconfusion_text, burnuptext, attackeracquired,
 scractiveHPrestored, shieldsdown_drop_text, shieldsdown_activate_text, schooling_text, schoolstop_text, battlebond_text, ashgrenja_text,
 zygarde_user_sense_text, zygarde_ai_sense_text, zygarde_transform_text, mimikyu_busted_text, disguise_server_as_decoy_text, misty_terrain_status_prevent_text,
-electric_terrain_status_prevent_text};
+electric_terrain_status_prevent_text, psychic_terrain_priority_prevent_text};
 
 u8* get_poke_nick2(struct pokemon* poke, u8 bank, u8* dst)
 {

@@ -219,6 +219,16 @@ BS_ELECTRIC_TERRAIN_PREVENT:
 	end2
 	
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@ BS Psychic Terrain Priority Prevent
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.global BS_PSYCHICTERRAIN_PREVENTS
+BS_PSYCHICTERRAIN_PREVENTS:
+	attackstring
+	pause_cmd 0x20
+	printstring 0x24F
+	goto_cmd BS_PPREDUCE_FAIL_WAITMSG_ENDTURN
+	
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @ telekinesis end
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .global BS_TELEKINESIS_ENDS_RET
