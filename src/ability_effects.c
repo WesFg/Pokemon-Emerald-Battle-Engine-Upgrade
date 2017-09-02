@@ -1108,9 +1108,9 @@ u8 ability_battle_effects(u8 switch_id, u8 bank, u8 ability_to_check, u8 special
                         }
                     }
                     if (spdef_sum >= def_sum)
-                        battle_scripting.stat_changer = 0x14;
-                    else
                         battle_scripting.stat_changer = 0x11;
+                    else
+                        battle_scripting.stat_changer = 0x14;
                     if(spdef_sum || def_sum)
                     {
                         effect = 1;
