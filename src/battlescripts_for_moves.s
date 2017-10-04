@@ -1185,6 +1185,8 @@ BELLYDRUMLIKE:
 	.word MOVE_FAILED
 	attackstring
 	ppreduce
+	attackanimation
+	waitanimation
 	orword 0x2024280 0x100
 	graphicalhpupdate bank_attacker
 	datahpupdate bank_attacker
